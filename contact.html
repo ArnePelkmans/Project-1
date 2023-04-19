@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" sizes="16x16">
+    <title>Contactgegevens</title>
 </head>
 <body>
+    <table>
+        <tr>
+            <th>
+                <a href="index.html">Portfolio</a>
+            </th>
+            <th>
+                <a href="cv.html">cv</a>
+            </th>
+            <th>
+                <a href="ervaring.html">Werkervaringen</a>
+            </th>
+            <th>
+                <a href="hobby.html">Hobby's</a>
+            </th>
+            <th>
+                <a href="contact.html">Contactgegevens</a>
+            </th>
+
+        </tr>
+    </table>
+    <h1>Contact</h1>
+    <div>
+        <h2>Vul het formelier hier onder in om mij te contacteren.</h2>
+        <form method="post" action="sendmail.php">
+            <input type="hidden" name="studentemail" value="r0938606@student.thomasmore.be">
     
+            <div>
+                <label for="Naam">Naam</label>
+                <input type="text" name="Naam" id="Naam">
+            </div>
+    
+            <div>
+                <label for="E-mail">E-mail</label>
+                <input type="email" name="email" id="E-mail">
+            </div>
+            <div>
+                <label for="Onderwerp">Onderwerp</label>
+                <input type="text" name="Onderwerp" id="Onderwerp">
+            </div>
+            <div>
+                <label for="Bericht">Bericht:</label>
+                <textarea name="Bericht" id="Bericht" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Versturen">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
